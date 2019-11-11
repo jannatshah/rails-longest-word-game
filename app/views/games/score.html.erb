@@ -1,0 +1,8 @@
+<h1>Games#score</h1>
+<!-- <p>Find me in app/views/games/score.html.erb</p> -->
+<!-- <p>You answered: <%=@answer %> and the letters were: <%= @grid %></p> -->
+
+<p><%= @result[:message] %></p>
+<p>Your score is: <%= @result[:score] %></p>
+
+<%= link_to "Play again!", new_path %>

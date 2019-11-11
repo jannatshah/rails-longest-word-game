@@ -1,0 +1,11 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+<%= @letters %>
+
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="answer" placeholder="Play your longest word...">
+  <input type="hidden" name="grid" value="<%= @letters %>">
+  <input type="submit" value="Play" class="btn btn-primary">
+</form>
